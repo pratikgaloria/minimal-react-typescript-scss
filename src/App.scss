@@ -1,0 +1,15 @@
+@import './styles/base.scss';
+
+.parent {
+  @extend %flex;
+
+  @include tablet-and-above {
+    max-width: 200px;
+  }
+
+  &-child {
+    @extend %flex;
+
+    flex-direction: column;
+  }
+}
